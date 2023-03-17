@@ -1,0 +1,295 @@
+{
+	"info": {
+		"_postman_id": "fd13a9cd-7d41-4de1-9ad9-6b5788f4ef58",
+		"name": "Laravel Challenge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26421311"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": " application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "florencio72@example.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "${1:my-secret-password",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/login",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Posts",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 1|RPlgM4kpU3G6XpgDHm4AHRSJykwDFgR1LEL8h98H",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "t@g.casfasf",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "3434asfasf",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/posts",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "posts/reaction",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 1|RPlgM4kpU3G6XpgDHm4AHRSJykwDFgR1LEL8h98H",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "post_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/posts/reaction",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"posts",
+						"reaction"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "mpt/invoice-amount",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 1|RPlgM4kpU3G6XpgDHm4AHRSJykwDFgR1LEL8h98H",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "month",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/mpt/invoice-amount",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"mpt",
+						"invoice-amount"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ooredoo/invoice-amount",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 1|RPlgM4kpU3G6XpgDHm4AHRSJykwDFgR1LEL8h98H",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "month",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/ooredoo/invoice-amount",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"ooredoo",
+						"invoice-amount"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "apply-job",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 1|RPlgM4kpU3G6XpgDHm4AHRSJykwDFgR1LEL8h98H",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Name",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "email@gmail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/job/apply",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"job",
+						"apply"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "staff/salary",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 1|RPlgM4kpU3G6XpgDHm4AHRSJykwDFgR1LEL8h98H",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "{{url}}/api/staff/salary",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"staff",
+						"salary"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
