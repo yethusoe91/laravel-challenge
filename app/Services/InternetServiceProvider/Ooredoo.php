@@ -2,7 +2,9 @@
 
 namespace App\Services\InternetServiceProvider;
 
-class Ooredoo extends Mpt
+use App\Services\InternetServiceProvider\WifiCalculatorInterface;
+
+class Ooredoo
 {
     protected $operator = 'ooredoo';
     

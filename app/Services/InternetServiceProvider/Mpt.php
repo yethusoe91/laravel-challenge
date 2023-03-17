@@ -2,6 +2,8 @@
 
 namespace App\Services\InternetServiceProvider;
 
+use App\Services\InternetServiceProvider\WifiCalculatorInterface;
+
 class Mpt
 {
     protected $operator = 'mpt';
